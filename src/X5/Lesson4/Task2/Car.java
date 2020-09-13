@@ -4,9 +4,9 @@ public abstract class Car {
     //3. Класс Car содержит поля - марка автомобиля, класс автомобиля, вес, мотор типа Engine.
     // Абстрактные методы start(), stop(), и реализованные методы turnRight(), turnLeft()
 
-    public String brand;
-    public int klass, weight;
-    public Engine engine;
+    protected String brand;
+    protected int klass, weight;
+    protected Engine engine;
 
     abstract void start();
 

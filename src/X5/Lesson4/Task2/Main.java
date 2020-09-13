@@ -3,14 +3,11 @@ package X5.Lesson4.Task2;
 public class Main {
 
     public static void main(String[] args) {
-        Lorry gazon = new Lorry();
+        Engine engine = new Engine();
+        engine.setManufacturer("Двигатель");
+        engine.setPower(150);
+        Lorry gazon = new Lorry("GAZ", 1, 10000, engine, 100);
         gazon.start();
-        gazon.klass = 1;
-        gazon.brand = "Gaz";
-        gazon.weight = 10000;
-        gazon.lift = 100;
-        gazon.engine.setPower(150);
-        gazon.engine.setManufacturer("Двигатель");
         gazon.printInfo();
         Car moskvich = new SportCar();
         moskvich.stop();
