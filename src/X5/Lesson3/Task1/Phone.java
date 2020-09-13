@@ -1,5 +1,7 @@
 package X5.Lesson3.Task1;
 
+import java.util.Arrays;
+
 public class Phone {
 
     private int number, weight;
@@ -32,9 +34,10 @@ public class Phone {
         return number;
     }
 
+
     public void sendMessage(int... number) {
-        for (int i = 0; i < number.length; i++) {
-            System.out.println(number[i]);
-        }
+        System.out.println(Arrays.toString(number));
+
     }
 }
+

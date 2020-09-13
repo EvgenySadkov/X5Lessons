@@ -1,6 +1,9 @@
 package X5.Lesson4.Task2;
 
 public class Lorry extends Car {
+
+    public int lift;
+
     @Override
     void start() {
         System.out.println("Грузовик поехал");
@@ -13,6 +16,6 @@ public class Lorry extends Car {
 
     @Override
     void printInfo() {
-        System.out.println(brand + klass + weight + engine);
+        System.out.println(brand + " " + klass + " " + weight + " " + lift + " " + engine);
     }
 }

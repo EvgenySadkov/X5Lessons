@@ -1,7 +1,7 @@
 package X5.Lesson3.Task2;
 
 public class Animal {
-    String food, location;
+    protected String food, location;
 
     public Animal(String food, String location) {
         this.food = food;

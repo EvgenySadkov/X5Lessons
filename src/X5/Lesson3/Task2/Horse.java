@@ -1,8 +1,14 @@
 package X5.Lesson3.Task2;
 
 public class Horse extends Animal {
-    String animal, name;
-    int age;
+    private String animal, name;
+    private int age;
+
+    public void setHorse(String animal, String name, int age) {
+        this.animal = animal;
+        this.name = name;
+        this.age = age;
+    }
 
     public Horse(String food, String location) {
         super(food, location);

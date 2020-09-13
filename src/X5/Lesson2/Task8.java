@@ -41,7 +41,7 @@ public class Task8 {
         System.out.println("сумма положительных элементов: " + sump);
         System.out.println("сумму четных отрицательных элементов: " + sumo);
         System.out.println("количество положительных элементов: " + kolp);
-        double a = (saoe / kol);
-        System.out.println("среднее арифметическое отрицательных элементов: " + a);
+        double number = (saoe / kol);
+        System.out.println("среднее арифметическое отрицательных элементов: " + number);
     }
 }

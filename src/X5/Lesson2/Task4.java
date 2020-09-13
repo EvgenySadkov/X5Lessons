@@ -11,19 +11,19 @@ public class Task4 {
     public static void main(String[] args) {
         System.out.print("Введите целое число:");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        if (a > 0) {
-            a = a + 1;
+        int number = sc.nextInt();
+        if (number > 0) {
+            number = number + 1;
         }
 
-        if (a < 0) {
-            a = a - 2;
+        if (number < 0) {
+            number = number - 2;
         }
 
-        if (a == 0) {
-            a = 10;
+        if (number == 0) {
+            number = 10;
         }
 
-        System.out.println(a);
+        System.out.println(number);
     }
 }

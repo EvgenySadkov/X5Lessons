@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Калькулятор включен. Введите выражение:");
-        double otvet = 0, a, b;
+        double  tempA, tempB;
         String input = sc.nextLine();
-        String op = "";
+        String operand = "";
 
         try {
             input = input.replaceAll("\\s+", "");
@@ -16,25 +16,25 @@ public class Main {
             int c = input.indexOf('+');
             if (c > -1) {
                 strings = input.split("\\+", 2);
-                op = "+";
+                operand = "+";
             }
             c = input.indexOf('-');
             if (c > -1) {
                 strings = input.split("-", 2);
-                op = "-";
+                operand = "-";
             }
             c = input.indexOf('*');
             if (c > -1) {
                 strings = input.split("\\*", 2);//не работает без \\
-                op = "*";
+                operand = "*";
             }
             c = input.indexOf('/');
             if (c > -1) {
                 strings = input.split("/", 2);
-                op = "/";
+                operand = "/";
             }
-            a = Double.parseDouble(strings[0]);
-            b = Double.parseDouble(strings[1]);
+            tempA = Double.parseDouble(strings[0]);
+            tempB = Double.parseDouble(strings[1]);
 
             System.out.println("Введите путь: ");
             WayType type = null;
@@ -57,20 +57,20 @@ public class Main {
                 default:
             }
 
-            switch (op) {
+            switch (operand) {
                 case "*":
-                    Calculator.multiplication(a, b, logger);
+                    Calculator.multiplication(tempA, tempB, logger);
                     break;
                 case "+":
-                    Calculator.add(a, b, logger);
+                    Calculator.add(tempA, tempB, logger);
 
                     break;
                 case "-":
-                    Calculator.minus(a, b, logger);
+                    Calculator.minus(tempA, tempB, logger);
 
                     break;
                 case "/":
-                    Calculator.division(a, b, logger);
+                    Calculator.division(tempA, tempB, logger);
 
                     break;
                 default:

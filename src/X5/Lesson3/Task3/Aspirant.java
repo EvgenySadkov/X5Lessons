@@ -1,11 +1,15 @@
 package X5.Lesson3.Task3;
 
 public class Aspirant extends Student {
-    boolean rabota;
+    private boolean work;
+
+    public boolean isWork() {
+        return work;
+    }
 
     public Aspirant(String firstName, String lastName, String gruop, double averageMark) {
         super(firstName, lastName, gruop, averageMark);
-        rabota = true;
+        work = true;
     }
 
     @Override
@@ -16,4 +20,13 @@ public class Aspirant extends Student {
             System.out.println(firstName + " стипендия " + 180);
         }
     }
+
+    public void noWork() {
+        if (work == true) {
+            work = false;
+        } else {
+            work = true;
+        }
+    }
+
 }

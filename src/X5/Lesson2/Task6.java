@@ -12,22 +12,22 @@ public class Task6 {
         System.out.print("Введите целое число: ");
         Scanner sc = new Scanner(System.in);
         int obj = sc.nextInt();
-        String otv = "";
+        String str = "";
         if (obj == 0) {
-            otv = otv + "нулевое ";
+            str = str + "нулевое ";
         } else {
             if (obj > 0) {
-                otv = otv + "положительное ";
+                str = str + "положительное ";
             } else {
-                otv = otv + "отрицательное ";
+                str = str + "отрицательное ";
             }
             if (obj % 2 == 0) {
-                otv = otv + "четное ";
+                str = str + "четное ";
             } else {
-                otv = otv + "нечетное ";
+                str = str + "нечетное ";
             }
         }
-        System.out.println(otv + "число");
+        System.out.println(str + "число");
 
     }
 }

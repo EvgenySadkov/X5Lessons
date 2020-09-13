@@ -8,11 +8,11 @@ public class Task2 {
     public static void main(String[] args) {
         System.out.print("Введите целое трехзначное число:");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        int number = sc.nextInt();
         int sum = 0;
         for (int i = 1; i < 4; i++) {
-            sum = sum + a % 10;
-            a = a / 10;
+            sum = sum + number % 10;
+            number = number / 10;
         }
 
         System.out.println("Сумма цифр " + sum);
