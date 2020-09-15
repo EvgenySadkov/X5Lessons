@@ -19,7 +19,7 @@ public class PC implements PCinterface {
         FacadePC comp1 = new FacadePC(); //создание полностью PC методом Фасад
         comp1.createPC();
 
-        System.out.println("Вводите компонент для PC, который нужно создать:"); //создание компонента методом Factory
+        System.out.println("\n Вводите компонент для PC, который нужно создать:"); //создание компонента методом Factory
         Scanner sc = new Scanner(System.in);
         String component = sc.nextLine();
         FactoryComponents createprogram = null;
