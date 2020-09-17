@@ -4,14 +4,11 @@ public class Horse extends Animal {
     private String animal, name;
     private int age;
 
-    public void setHorse(String animal, String name, int age) {
+    public Horse(String food, String location, String animal, String name, int age) {
+        super(food, location);
         this.animal = animal;
         this.name = name;
         this.age = age;
-    }
-
-    public Horse(String food, String location) {
-        super(food, location);
     }
 
     @Override

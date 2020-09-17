@@ -1,14 +1,23 @@
 package Lesson3.Task3;
 
 public class Student {
-    protected String firstName, lastName, gruop;
-    protected double averageMark;
+    private String firstName;
+    private String lastName, gruop;
+    private double averageMark;
 
     public Student(String firstName, String lastName, String gruop, double averageMark) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gruop = gruop;
         this.averageMark = averageMark;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public double getAverageMark() {
+        return averageMark;
     }
 
     public void getScholarship() {

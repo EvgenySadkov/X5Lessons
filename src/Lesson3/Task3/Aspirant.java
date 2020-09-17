@@ -14,10 +14,10 @@ public class Aspirant extends Student {
 
     @Override
     public void getScholarship() {
-        if (averageMark == 5) {
-            System.out.println(firstName + " стипендия " + 200);
+        if (getAverageMark() == 5) {
+            System.out.println(getFirstName() + " стипендия " + 200);
         } else {
-            System.out.println(firstName + " стипендия " + 180);
+            System.out.println(getFirstName() + " стипендия " + 180);
         }
     }
 
