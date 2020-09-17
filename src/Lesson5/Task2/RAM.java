@@ -6,6 +6,16 @@ public class RAM extends PC implements ComponentsPC {
     private int clockFrequency;
     private TypeRAM typeRAM;
 
+    public RAM() {
+    }
+
+    public RAM(String manufacturer, int size, int clockFrequency, TypeRAM typeRAM) {
+        this.manufacturer = manufacturer;
+        this.size = size;
+        this.clockFrequency = clockFrequency;
+        this.typeRAM = typeRAM;
+    }
+
     public void setRAM(String manufacturer, int size, int clockFrequency, TypeRAM typeRAM) {
         this.manufacturer = manufacturer;
         this.size = size;

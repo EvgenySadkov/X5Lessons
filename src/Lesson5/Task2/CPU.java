@@ -7,6 +7,17 @@ public class CPU extends PC implements ComponentsPC {
     private String name;
     private String manufacturer;
 
+    public CPU() {
+    }
+
+    public CPU(int clockFrequency, int core, int cacheMemory, String name, String manufacturer) {
+        this.clockFrequency = clockFrequency;
+        this.core = core;
+        this.cacheMemory = cacheMemory;
+        this.name = name;
+        this.manufacturer = manufacturer;
+    }
+
     public void setCPU(int clockFrequency, int core, int cacheMemory, String name, String manufacturer) {
         this.clockFrequency = clockFrequency;
         this.core = core;

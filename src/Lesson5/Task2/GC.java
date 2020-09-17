@@ -6,6 +6,16 @@ public class GC extends PC implements ComponentsPC {
     private int size;
     CoolingGC coolingGC;
 
+    public GC() {
+    }
+
+    public GC(String manufacturer, TypeRAMGC typeRAMGC, int size, CoolingGC coolingGC) {
+        this.manufacturer = manufacturer;
+        this.typeRAMGC = typeRAMGC;
+        this.size = size;
+        this.coolingGC = coolingGC;
+    }
+
     public void setGC(String manufacturer, TypeRAMGC typeRAMGC, int size, CoolingGC coolingGC) {
         this.manufacturer = manufacturer;
         this.typeRAMGC = typeRAMGC;

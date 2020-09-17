@@ -3,6 +3,13 @@ package Lesson5.Task2;
 public class Monitor extends PC implements ComponentsPC {
     private String name;
 
+    public Monitor() {
+    }
+
+    public Monitor(String name) {
+        this.name = name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

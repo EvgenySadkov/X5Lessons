@@ -12,7 +12,9 @@ public class PC implements PCinterface {
         Monitor monitor;
 
         Strategy cpu1 = new Strategy(); //создание компонентов через паттерн Стратегия
-        cpu1.setComponentsPC(new CPU());
+        cpu1.setComponentsPC(new CPU(1000, 2, 1024, "3m", "acer"));
+        cpu1.createComponent();
+        cpu1.setComponentsPC(new HDD("China", 500, TypeHDD.HDD, FormFactorHDD.LFF));
         cpu1.createComponent();
         System.out.println("");
 
@@ -46,6 +48,6 @@ public class PC implements PCinterface {
             ComponentsPC message = createprogram.createComponent();
             message.output();
         }
-        PC pc=new PC();
+
     }
 }

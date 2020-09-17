@@ -6,6 +6,16 @@ public class HDD extends PC implements ComponentsPC {
     TypeHDD typeHDD;
     FormFactorHDD formFactorHDD;
 
+    public HDD() {
+    }
+
+    public HDD(String manufacturer, int size, TypeHDD typeHDD, FormFactorHDD formFactorHDD) {
+        this.manufacturer = manufacturer;
+        this.size = size;
+        this.typeHDD = typeHDD;
+        this.formFactorHDD = formFactorHDD;
+    }
+
     public void setHDD(String manufacturer, int size, TypeHDD typeHDD, FormFactorHDD formFactorHDD) {
         this.manufacturer = manufacturer;
         this.size = size;
