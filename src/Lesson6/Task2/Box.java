@@ -2,7 +2,7 @@ package Lesson6.Task2;
 
 import java.util.Arrays;
 
-public class Box<T, E> {
+public class Box<T> {
     private Object[] box = new Object[0];
 
     public void add(T item) {
@@ -13,6 +13,7 @@ public class Box<T, E> {
             }
             result[box.length] = item;
             box = result;
+            item = null;
         } else {
             if ((item instanceof Orange) & (box[0] instanceof Orange) | (item instanceof Apple) & (box[0] instanceof Apple)) {
                 Object[] result = new Object[box.length + 1];
@@ -21,6 +22,7 @@ public class Box<T, E> {
                 }
                 result[box.length] = item;
                 box = result;
+                item = null;
             } else {
                 System.out.println("разные фрукты");
             }
@@ -61,27 +63,39 @@ public class Box<T, E> {
         return box.length;
     }
 
-    public void sprinkle(Box to) {//задание со *
+    public void sprinkleIn(Box to) {//метод-исследование
         if ((box[0] instanceof Orange) & (to.getFruit(0) instanceof Orange) | (box[0] instanceof Apple) & (to.getFruit(0) instanceof Apple)) {
             Object[] result = new Object[box.length + to.getLength()];
-               for (int i = 0; i < to.getLength(); i++) {
+            for (int i = 0; i < to.getLength(); i++) {
                 result[i] = to.getFruit(i);
-                      }
-               for (int i= to.getLength(); i<box.length + to.getLength(); i++){
-                   result[i]=box[i-to.getLength()];
-               }
+            }
+            for (int i = to.getLength(); i < box.length + to.getLength(); i++) {
+                result[i] = box[i - to.getLength()];
+            }
             box = result;
-               to.clear();
+            to.clear();
 
-        }
-        else {
+        } else {
             System.out.println("Нельзя сыпать разные фрукты в одну коробку");
         }
     }
 
+    public void sprinkleOut(Box to) {//задание со *
+        if ((box[0] instanceof Orange) & (to.getFruit(0) instanceof Orange) | (box[0] instanceof Apple) & (to.getFruit(0) instanceof Apple)) {
+            for (int i = 0; i < box.length; i++) {
+                to.add(box[i]);
+                box[i] = null;
+            }
+        } else {
+            System.out.println("Нельзя сыпать разные фрукты в одну коробку");
+        }
+    }
+
+
     private void clear() {
-        for (int i=0; i<box.length; i++){
-            box[i]=null;
+
+        for (int i = 0; i < box.length; i++) {
+            box[i] = null;
         }
     }
 }

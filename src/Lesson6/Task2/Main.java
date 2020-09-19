@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Вес коробки:" + box1.getClass()+ " " + box1.getWeight());
         System.out.println("Вес коробки:" + box2.getClass()+ " " + box2.getWeight());
         System.out.println(box1.compare(box2));
-        box2.sprinkle(box3);//в первую коробку не идет
+        box2.sprinkleOut(box3);//в первую коробку не идет
         box1.print();
         box2.print();
         box3.print();

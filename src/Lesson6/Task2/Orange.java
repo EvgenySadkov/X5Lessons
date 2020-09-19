@@ -3,7 +3,8 @@ package Lesson6.Task2;
 import java.util.Arrays;
 
 public class Orange <T> extends Fruit{
-    public Orange(T numFruit) {
+    private T nameFruit;
+    public Orange(T nameFruit) {
     }
     private Object[] box = new Object[0];
 @Override
