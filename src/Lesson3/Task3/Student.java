@@ -1,9 +1,9 @@
 package Lesson3.Task3;
 
 public class Student {
-    private String firstName;
+    protected String firstName;
     private String lastName, gruop;
-    private double averageMark;
+    protected double averageMark;
 
     public Student(String firstName, String lastName, String gruop, double averageMark) {
         this.firstName = firstName;
