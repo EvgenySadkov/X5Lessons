@@ -8,9 +8,9 @@ public abstract class Car {
     protected int klass, weight;
     protected Engine engine;
 
-    abstract void start();
+    public abstract void start();
 
-    abstract void stop();
+    public abstract void stop();
 
     public void turnRight() {
         System.out.println("Поворот направо");
@@ -20,5 +20,5 @@ public abstract class Car {
         System.out.println("Поворот налево");
     }
 
-    abstract void printInfo();
+    protected abstract void printInfo();
 }

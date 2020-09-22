@@ -4,11 +4,8 @@ public class Engine{
     private int power;
     private String manufacturer;
 
-    public void setPower(int power) {
+    public Engine(int power, String manufacturer) {
         this.power = power;
-    }
-
-    public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 

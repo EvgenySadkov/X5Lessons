@@ -8,7 +8,7 @@ public class Main {
         shape[1] = new Circle(); //задан диаметр
         shape[2] = new Rectangle(); //задана сторона квадрата
         for (Shape sh : shape) {
-            System.out.println("Площадь фигуры: " + sh.square(10));
+            System.out.println("Площадь фигуры: " + sh.square());
         }
     }
 }
