@@ -5,11 +5,6 @@ import java.util.Scanner;
 public class PC implements PCinterface {
     public static void main(String[] args) {
 
-        CPU cpu;
-        RAM ram;
-        GC gc;
-        HDD hdd;
-        Monitor monitor;
 
         Strategy cpu1 = new Strategy(); //создание компонентов через паттерн Стратегия
         cpu1.setComponentsPC(new CPU(1000, 2, 1024, "3m", "acer"));

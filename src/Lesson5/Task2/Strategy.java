@@ -1,7 +1,7 @@
 package Lesson5.Task2;
 
 public class Strategy {
-    ComponentsPC componentsPC;
+    private ComponentsPC componentsPC;
 
     public void setComponentsPC(ComponentsPC componentsPC) {
         this.componentsPC = componentsPC;

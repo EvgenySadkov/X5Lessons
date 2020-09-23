@@ -3,8 +3,8 @@ package Lesson5.Task2;
 public class HDD extends PC implements ComponentsPC {
     private String manufacturer;
     private int size;
-    TypeHDD typeHDD;
-    FormFactorHDD formFactorHDD;
+    private TypeHDD typeHDD;
+    private FormFactorHDD formFactorHDD;
 
     public HDD() {
     }

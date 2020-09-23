@@ -2,9 +2,9 @@ package Lesson5.Task2;
 
 public class GC extends PC implements ComponentsPC {
     private String manufacturer;
-    TypeRAMGC typeRAMGC;
+    private TypeRAMGC typeRAMGC;
     private int size;
-    CoolingGC coolingGC;
+    private CoolingGC coolingGC;
 
     public GC() {
     }
