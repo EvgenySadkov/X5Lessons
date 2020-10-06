@@ -1,15 +1,17 @@
 package Lesson4.Task1;
 
-public class Triangle implements Shape {
-    private int sh;
+import java.util.Scanner;
 
-    public void setSh(int sh) {
-        this.sh = sh;
-    }
+public class Triangle implements Shape {
+    private int side, height;
 
     @Override
     public double square() {
-        double s = sh * sh / 2;
-        return s;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите длину стороны треугольника:");
+        side = Integer.valueOf(sc.nextLine());
+        System.out.println("Введите длину высоты треугольника:");
+        height = Integer.valueOf(sc.nextLine());
+        return (side*height);
     }
 }

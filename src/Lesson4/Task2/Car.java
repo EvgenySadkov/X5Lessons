@@ -20,5 +20,6 @@ public abstract class Car {
         System.out.println("Поворот налево");
     }
 
-    protected abstract void printInfo();
+    public void printInfo() {System.out.println(brand + " " + klass + " " + weight  + " " + engine);
+    }
 }

@@ -1,15 +1,17 @@
 package Lesson4.Task1;
 
-public class Rectangle implements Shape {
-    private int sh;
+import java.util.Scanner;
 
-    public void setSh(int sh) {
-        this.sh = sh;
-    }
+public class Rectangle implements Shape {
+    private int side1, side2;
 
     @Override
     public double square() {
-        sh = sh * sh;
-        return sh;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите длину стороны 1:");
+        side1 = Integer.valueOf(sc.nextLine());
+        System.out.println("Введите длину стороны 2:");
+        side2 = Integer.valueOf(sc.nextLine());
+        return (side1*side2);
     }
 }
