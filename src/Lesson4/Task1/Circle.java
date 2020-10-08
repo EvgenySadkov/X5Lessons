@@ -6,11 +6,7 @@ public class Circle implements Shape {
     private int radius;
 
     @Override
-    public double square() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Введите радиус круга:");
-        radius = Integer.valueOf(sc.nextLine());
-        double s = ((radius*radius) * Math.PI);
-        return s;
+    public String square() {
+         return ("произведение квадрата радиуса и числа Пи");
     }
 }
