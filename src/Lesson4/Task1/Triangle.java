@@ -6,8 +6,8 @@ public class Triangle implements Shape {
     private int side, height;
 
     @Override
-    public String square() {
+    public double square() {
 
-        return ("произведение основания на высоту");
+        return (side*height);
     }
 }

@@ -6,7 +6,7 @@ public class Rectangle implements Shape {
     private int side1, side2;
 
     @Override
-    public String square() {
-        return ("произведение его длины и ширины");
+    public double square() {
+        return (side1*side2);
     }
 }
