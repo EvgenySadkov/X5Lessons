@@ -24,10 +24,10 @@ public class Main {
         System.out.println("");
 
 
-        FacadePC pcNew = new FacadePC(); //создание полностью PC методом Фасад
+        FacadePC pcNew = new FacadePC(); //создание полностью PC методом паттерна Фасад
         pcNew.createPC();
 
-        System.out.println("\n Вводите компонент для PC, который нужно создать:"); //создание компонента методом Factory
+        System.out.println("\n Вводите компонент для PC, который нужно создать:"); //создание компонента методом паттерна Factory
         Scanner sc = new Scanner(System.in);
         String component = sc.nextLine();
         PCFactory createprogram = new PCFactory(component);
