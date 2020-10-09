@@ -1,11 +1,11 @@
 package Lesson5.Task2;
 
 public class FacadePC {
-    private CPU cpu = new CPU();
-    private RAM ram = new RAM();
-    private GC gc = new GC();
-    private HDD hdd = new HDD();
-    private Monitor monitor = new Monitor();
+    public CPU cpu = new CPU();
+    public RAM ram = new RAM();
+    public GC gc = new GC();
+    public HDD hdd = new HDD();
+    public Monitor monitor = new Monitor();
 
     public void createPC() {
         cpu.output();

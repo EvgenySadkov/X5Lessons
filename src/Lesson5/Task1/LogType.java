@@ -1,6 +1,6 @@
 package Lesson5.Task1;
 
-public enum WayType {
+public enum LogType {
     DB, File, Console;
 }
 

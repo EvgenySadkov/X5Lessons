@@ -1,8 +1,9 @@
 package Lesson5.Task1;
 
-public class ConsoleLogger extends Logger {
+public class ConsoleLogger extends Logger implements Input {
+
     @Override
-    public Input log(String message) {
-        return new Console();
+    public void log(String message) {
+        System.out.print("Log into console: " + message);
     }
 }

@@ -1,6 +1,6 @@
 package Lesson5.Task2;
 
-public class HDD extends PC implements ComponentsPC {
+public class HDD extends ComponentFactory implements ComponentsPC {
     private String manufacturer;
     private int size;
     private TypeHDD typeHDD;
@@ -10,13 +10,6 @@ public class HDD extends PC implements ComponentsPC {
     }
 
     public HDD(String manufacturer, int size, TypeHDD typeHDD, FormFactorHDD formFactorHDD) {
-        this.manufacturer = manufacturer;
-        this.size = size;
-        this.typeHDD = typeHDD;
-        this.formFactorHDD = formFactorHDD;
-    }
-
-    public void setHDD(String manufacturer, int size, TypeHDD typeHDD, FormFactorHDD formFactorHDD) {
         this.manufacturer = manufacturer;
         this.size = size;
         this.typeHDD = typeHDD;

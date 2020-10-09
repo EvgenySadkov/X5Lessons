@@ -1,6 +1,6 @@
 package Lesson5.Task2;
 
-public class RAM extends PC implements ComponentsPC {
+public class RAM extends ComponentFactory implements ComponentsPC {
     private String manufacturer;
     private int size;
     private int clockFrequency;
@@ -10,13 +10,6 @@ public class RAM extends PC implements ComponentsPC {
     }
 
     public RAM(String manufacturer, int size, int clockFrequency, TypeRAM typeRAM) {
-        this.manufacturer = manufacturer;
-        this.size = size;
-        this.clockFrequency = clockFrequency;
-        this.typeRAM = typeRAM;
-    }
-
-    public void setRAM(String manufacturer, int size, int clockFrequency, TypeRAM typeRAM) {
         this.manufacturer = manufacturer;
         this.size = size;
         this.clockFrequency = clockFrequency;

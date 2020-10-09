@@ -1,6 +1,6 @@
 package Lesson5.Task2;
 
-public class GC extends PC implements ComponentsPC {
+public class GC extends ComponentFactory implements ComponentsPC {
     private String manufacturer;
     private TypeRAMGC typeRAMGC;
     private int size;
@@ -10,13 +10,6 @@ public class GC extends PC implements ComponentsPC {
     }
 
     public GC(String manufacturer, TypeRAMGC typeRAMGC, int size, CoolingGC coolingGC) {
-        this.manufacturer = manufacturer;
-        this.typeRAMGC = typeRAMGC;
-        this.size = size;
-        this.coolingGC = coolingGC;
-    }
-
-    public void setGC(String manufacturer, TypeRAMGC typeRAMGC, int size, CoolingGC coolingGC) {
         this.manufacturer = manufacturer;
         this.typeRAMGC = typeRAMGC;
         this.size = size;

@@ -1,8 +1,9 @@
 package Lesson5.Task1;
 
-public class FileLogger extends Logger {
+public class FileLogger extends Logger implements Input  {
     @Override
-    public Input log(String message) {
-        return new File();
+    public void log(String message) {
+        System.out.print("Log into file: " + message);
     }
+
 }
